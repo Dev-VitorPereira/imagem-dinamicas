@@ -9,9 +9,11 @@
 <body>
     <h1>Imagens Dinamicas</h1>
         <picture><!--Tag para varias fonte imagens-->
-          <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/">  
-        <img src="imagens/foto-g.png" alt="Imagem grande">
 
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- se for menor de 750 carrega proxima foto-->
+            <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"><!-- se for menor de 1050 carrega proxima foto--> <!--limitar tamanho de fotos-->
+
+        <img src="imagens/foto-g.png" alt="Imagem grande">
 
         </picture>    
 </body>
